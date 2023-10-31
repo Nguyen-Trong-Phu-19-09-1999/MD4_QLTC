@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 public class Transaction_type {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id ;
+    private Long id ;
     @NotNull
-    String name;
+    private String name;
 }

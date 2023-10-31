@@ -11,19 +11,19 @@ import java.time.LocalDate;
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id ;
+    private Long id;
     @ManyToOne
-    User_category userCategory;
+    private User_category userCategory;
     @ManyToOne
-    Transaction_type transactionType;
+    private Transaction_type transactionType;
     @NotNull
-    String name;
+    private String name;
     @NotNull
-    Double amount;
+    private Double amount;
     @NotNull
-    String location;
+    private String location;
     @NotNull
-    LocalDate date;
+    private LocalDate date;
     @NotNull
-    String description;
+    private String description;
 }
