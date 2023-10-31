@@ -10,15 +10,15 @@ import javax.validation.constraints.NotNull;
 public class User_category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id ;
+    private Long id ;
     @ManyToOne
-    User_information userInformation;
+    private User_information userInformation;
     @ManyToOne
-    Category_type categoryType;
+    private Category_type categoryType;
     @NotNull
-    String name;
+    private String name;
     @NotNull
-    String color;
+    private String color;
     @NotNull
-    String description;
+    private String description;
 }

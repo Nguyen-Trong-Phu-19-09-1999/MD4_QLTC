@@ -10,17 +10,17 @@ import javax.validation.constraints.NotNull;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id ;
+    private Long id ;
     @ManyToOne
-    Roles_auth rolesAuth;
+    private Roles_auth rolesAuth;
     @NotNull
-    String email;
+    private String email;
     @NotNull
-    String userName;
+    private String userName;
     @NotNull
-    String password;
+    private String password;
 
-    Boolean status;
+    private Boolean status;
 
 
 
