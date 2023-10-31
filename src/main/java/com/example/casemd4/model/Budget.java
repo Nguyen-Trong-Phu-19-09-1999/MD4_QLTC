@@ -11,15 +11,15 @@ import java.time.LocalDate;
 public class Budget {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id ;
+    Long id ;
     @ManyToOne
-    private User_category userCategory;
+    User_category userCategory;
     @NotNull
-    private Double amount;
+    Double amount;
     @NotNull
-    private LocalDate fromDate;
+    LocalDate fromDate;
     @NotNull
-    private LocalDate toDate;
+    LocalDate toDate;
     @NotNull
-    private String description;
+    String description;
 }
